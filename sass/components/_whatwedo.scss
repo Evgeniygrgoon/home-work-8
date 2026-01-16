@@ -1,0 +1,43 @@
+@use './base/vars';
+
+.WhatWeDo_tittle {
+margin-top: 94px;
+margin-bottom: 94px;
+}
+
+.WhatWeDo_list {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+
+/* Чем мы занимаемся ТУМБЫ */
+
+.WhatWeDo_item>img {
+  display: block;
+}
+
+.WhatWeDo_item {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.WhatWeDo_label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  bottom: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #f5f4fa;
+  text-transform: uppercase;
+  text-align: center;
+  
+}

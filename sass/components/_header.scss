@@ -1,0 +1,41 @@
+@use './base/vars';
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-color:rgba(236, 236, 236, 1);
+  border-bottom-style: solid;
+
+}
+
+.heder_nav {
+   display: flex;
+  height: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  color:vars.$brandblack;
+}
+
+/* Логотип  */
+/* задает логотипу шрифт и размер */
+.header_logo {
+    width: 160px;
+  padding-left: 15px;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: vars.$mainfontweight;
+  font-size: 26px;
+  color: vars.$brandcolor;
+}
+
+
+
+/* Цвет "WEB" */
+.logo {
+  color: #2196f3;
+}
+/* цвет "STUDIO" вверху */
+.header_span {
+  color:vars.$brandblack;
+}

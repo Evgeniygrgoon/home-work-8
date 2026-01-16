@@ -1,0 +1,39 @@
+@use './base/vars';
+
+.hero {
+  background-image:
+   linear-gradient(to bottom, rgba(47, 48, 58, 0.4)),
+   url(../../images/img-background.jpg);
+  background-color: vars.$darkbackground;
+  height: 600px;
+  width: 1600px;
+  margin: 0% auto;
+  background-position: center;
+ 
+}
+
+/* Титульный текст */
+.hero_title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 200px;
+  color: white;
+}
+
+/*  стиль кнопки "заказать услугу" */
+.hero_button {
+  background-color: vars.$brandcolor;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-left: 500px;
+  margin-top: 30px;
+  border: 0;
+}
+

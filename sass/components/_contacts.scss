@@ -1,0 +1,95 @@
+@use './base/vars';
+
+.contacts {
+  display:flex;
+   margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 305px;
+
+ 
+}
+
+
+
+
+.contacts_list {
+  display: flex;
+  padding: 0%;
+ 
+}
+
+
+
+.contacts_item {
+  color: vars.$brandgrey;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover ,
+  &:focus 
+  {
+  color: vars.$brandcolor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .contacts_smatphone ,
+  &:focus .contacts_smatphone {
+  fill: vars.$brandcolor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&:hover .contacts_envelope ,
+  &:focus .contacts_envelope {
+  fill: vars.$brandcolor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  }
+}
+
+
+
+
+
+.contacts_item--left {
+  display:flex;
+  align-items: center;
+  padding: 10px 0px 10px 10px;
+
+  &:hover ,
+  &:focus 
+  {
+  color: vars.$brandcolor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contacts_item--right {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 0px;
+
+  &:hover ,
+  &:focus 
+  {
+  color: vars.$brandcolor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
+
+
+.contacts_smatphone {
+  fill: vars.$brandgrey;
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.contacts_envelope {
+ fill: vars.$brandgrey;
+ width: 16px;
+ height: 12px;
+ margin-left: 30px;
+ margin-right: 10px;
+ }
+
+

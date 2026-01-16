@@ -1,0 +1,36 @@
+@use './base/vars';
+
+.clients_tittle{
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+
+.clients_list {
+  display: flex;
+  padding: 0%;
+  justify-content: space-around;
+  gap: 10px;
+  padding-bottom: 94px;
+}
+
+
+
+.clients_svg {
+  height: 90px;
+  width: 170px;
+  fill:rgba(175, 177, 184, 1);;
+  border: 20px 63px ;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(175, 177, 184, 1);
+  border-radius: 4px;
+
+  &:hover ,
+  &focus {
+   border-color: vars.$brandcolor;
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+  
+}

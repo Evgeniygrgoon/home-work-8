@@ -1,0 +1,68 @@
+@use './base/vars';
+
+.distribution {
+  margin-top: 72px; 
+  margin-left: 93px;
+  color: white;
+  }
+
+  .distribution_text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+  }
+
+  .distribution_form {
+   display: flex;
+   margin-top: 20px;
+  }
+
+
+
+
+
+  .distribution_input {
+    width: 358px;
+    height: 50px;
+    outline: none;
+    padding-left: 16px;
+    margin-top:0px;
+    background-color: vars.$darkbackground;
+    color: vars.$brandcolor;
+    border: 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-style: solid;
+    border-radius: 4px;
+
+  &:hover ,
+  &focus {
+  border-color: vars.$brandcolor;
+  }
+  }
+
+
+   .distribution_button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 29px;
+    padding-top: 16px;
+    color: #f5f4fa;
+    background-color: vars.$brandcolor;
+    border-radius:4px ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  
+  .button_svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+  }

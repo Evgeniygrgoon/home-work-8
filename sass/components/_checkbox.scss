@@ -1,0 +1,59 @@
+@use './base/vars';
+
+.checkbox {
+  margin-top: 20px;
+  margin-left: 12px;
+  padding-left: 24.38px;
+  font-weight: 400;
+  font-size: 14px;
+  color: vars.$brandgrey;
+}
+
+
+
+
+
+.checkbox_agreement {
+  padding-left: 4px;
+  color: vars.$brandcolor;
+  line-height: 2px;
+  text-decoration: underline vars.$brandcolor ;
+
+}
+
+.checkbox_input{
+  position: absolute;
+   -webkit-appearance: none;
+  width: 0px;
+  height: 0px;
+
+        &:focus + .checkbox_castom,
+        &:hover + .checkbox_castom,
+        &:checked + .checkbox_castom  {
+        border-color: vars.$brandcolor;
+        }
+
+
+          &:checked + .checkbox_castom {
+          background-image: url(../../images/icon-checked.svg);
+          background-position: center;
+          border: none;
+          transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  }
+
+ 
+
+.checkbox_castom {
+  position: absolute;
+  right: 455px ;
+  width: 15px;
+  height: 15px;
+  border: 2px solid vars.$brandblack;
+  border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ outline: none;
+}
+
+
+  
