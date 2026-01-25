@@ -44,15 +44,23 @@ ol[class] {
 
 
 
-
+// @media screen and (max-width: 767px){
+//   .conteiner {
+//   width: 450px;
+//   margin: 0 auto;
+//   }
+// }
   
 
 
 .conteiner {
-  width: 1200px;
+  width: 450px;
   margin: 0 auto;
-  
+  overflow: hidden;
 }
+
+
+
 
 /* задаем шрифт , цвет и размер всему тексту */
 .body {

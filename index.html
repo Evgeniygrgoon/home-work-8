@@ -26,6 +26,8 @@
           <a class="header_logo" href="index.html">
             Web<span class="header_span header_span">Studio</span>
           </a>
+          <button class="burger js-open-menu" type="button"></button>
+    
           <div class="navigation">
             <ul class="navigation_list">
               <li>
@@ -33,14 +35,14 @@
                   Студия
                 </a>
               </li>
-              <li >
+              <li>
                 <a class="navigation_link" href="/" rel="noopener noreferrer">
                   Контакты
                 </a>
               </li>
               <li>
-                <a class="navigation_link" href="portfolio.html" rel="noopener noreferrer"> 
-                  Портфолио 
+                <a class="navigation_link" href="portfolio.html" rel="noopener noreferrer">
+                  Портфолио
                 </a>
               </li>
             </ul>
@@ -65,8 +67,25 @@
               </li>
             </ul>
           </div>
-        </div>
       </nav>
+      <div class="mbmenu js-menu-container ">
+        <button class="button mbmenu_button js-close-menu"></button>
+        <ul class="mbmenu_navigation">
+          <li class="mbmenu_item">Студия</li>
+          <li class="mbmenu_item">Портфолио</li>
+          <li class="mbmenu_item">Контакты</li>
+        </ul>
+        <ul class="mbmenu_contacts">
+          <li class="mbmenu_item mbmenu_item--number">+38 096 111 11 11</li>
+          <li class="mbmenu_item mbmenu_item--mail">info@devstudio.com</li>
+        </ul>
+        <ul class="mbmenu_links">
+          <li class="mbmenu_link mbmenu_link--first">Instagram</li>
+          <li class="mbmenu_link">Twitter</li>
+          <li class="mbmenu_link">Facebook</li>
+          <li class="mbmenu_link">linkedIn</li>
+        </ul>
+      </div>
     </section>
   </header>
   <main>
@@ -487,6 +506,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 
 </html>

@@ -3,6 +3,7 @@
 @use './components/header';
 @use './components/navigation';
 @use './components/contacts';
+@use './components/mbmenu';
 @use './components/hero';
 @use './components/adventage';
 @use './components/whatwedo';
@@ -19,3 +20,4 @@
 @use './components/filter';
 @use './components/project';
 @use './components/base/base_settings_styles';
+@use './components/burger';

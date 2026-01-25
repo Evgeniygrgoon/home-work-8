@@ -5,6 +5,12 @@
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 767px){
+  .navigation {
+  display: none;
+  }
+}
+
 
 .navigation_list {
   display: flex;

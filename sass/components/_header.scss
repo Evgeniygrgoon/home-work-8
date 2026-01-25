@@ -4,12 +4,12 @@
   border-bottom-width: 1px;
   border-bottom-color:rgba(236, 236, 236, 1);
   border-bottom-style: solid;
+  overflow: hidden;
 
 }
 
 .heder_nav {
    display: flex;
-  height: 80px;
   font-size: 14px;
   font-weight: 500;
   color:vars.$brandblack;
@@ -18,14 +18,12 @@
 /* Логотип  */
 /* задает логотипу шрифт и размер */
 .header_logo {
-    width: 160px;
-  padding-left: 15px;
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: vars.$mainfontweight;
-  font-size: 26px;
+  font-size: 24px;
+  letter-spacing: .03em;
   color: vars.$brandcolor;
 }
 
@@ -38,4 +36,5 @@
 /* цвет "STUDIO" вверху */
 .header_span {
   color:vars.$brandblack;
+  letter-spacing: 3%;
 }
