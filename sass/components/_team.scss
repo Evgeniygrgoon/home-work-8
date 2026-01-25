@@ -2,18 +2,21 @@
 @use './base/vars';
 
 .team {
+  margin-top: 60px;
   background-color: #f5f4fa;
 }
 
 /* размер текста "наша команда" */
 .team_tittle {
   font-size: 36px;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
 .team_list {
   display: flex;
+  flex-direction:column;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 94px;

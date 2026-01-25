@@ -599,55 +599,37 @@ template {
   }
 }
 .advantage {
-  margin-top: 94px;
+  margin-top: 30px;
 }
 
 .advantage_list {
   display: flex;
-  gap: 30px;
-  text-align: left;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 0%;
 }
 
-@media screen and (max-width: 767px) {
-  .advantage_list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 0%;
-  }
-  .advantage {
-    margin-top: 63px;
-  }
-}
-.advantage_svg {
-  width: 270px;
+.advantage_illustration {
+  width: 450px;
   height: 120px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  background-color: rgb(245, 244, 250);
+  border-radius: 4px;
 }
 
-.advantage_item {
-  width: 270px;
+.advantage_svg {
+  margin-left: 190px;
+  margin-top: 25px;
+  height: 70px;
+  width: 70px;
 }
 
-@media screen and (max-width: 767px) {
-  .advantage_svg {
-    width: 450px;
-    height: 120px;
-    margin-bottom: 30px;
-  }
-  .advantage_item {
-    width: 450px;
-    background-image: url(../../images/sprite.svg#icon-svg-background);
-  }
-}
 .advantage_tittle {
   text-transform: uppercase;
+  padding-top: 30px;
+  text-align: center;
   padding-bottom: 10px;
   font-weight: 700;
 }
@@ -655,8 +637,13 @@ template {
 .advantage_text {
   font-size: 14px;
   font-weight: 400;
+  letter-spacing: 0.03em;
   color: #757575;
   line-height: 1.7;
+}
+
+.WhatWeDo {
+  display: none;
 }
 
 .WhatWeDo_tittle {
@@ -700,18 +687,21 @@ template {
 
 /* Фон секции "наша команда" */
 .team {
+  margin-top: 60px;
   background-color: #f5f4fa;
 }
 
 /* размер текста "наша команда" */
 .team_tittle {
   font-size: 36px;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 50px;
 }
 
 .team_list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 94px;
@@ -746,7 +736,7 @@ template {
   justify-content: space-around;
   gap: 10px;
   padding: 0%;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 
 .PersonalContacts_svg {
