@@ -3,9 +3,9 @@
 .checkbox {
   margin-top: 20px;
   margin-left: 12px;
-  padding-left: 24.38px;
+  padding-left: 8px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: vars.$brandgrey;
 }
 
@@ -46,7 +46,8 @@
 
 .checkbox_castom {
   position: absolute;
-  right: 455px ;
+  bottom: 117px;
+  left: 40px ;
   width: 15px;
   height: 15px;
   border: 2px solid vars.$brandblack;

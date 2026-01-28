@@ -3,7 +3,8 @@
 
 .team {
   margin-top: 60px;
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
+  width: 100vw;
 }
 
 /* размер текста "наша команда" */
@@ -17,9 +18,9 @@
   display: flex;
   flex-direction:column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
+    padding-bottom: 60px;
+    padding: 0px;
+     padding-bottom: 60px;
   gap: 30px;
   
 }

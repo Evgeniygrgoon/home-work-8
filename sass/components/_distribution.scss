@@ -1,8 +1,9 @@
 @use './base/vars';
 
 .distribution {
-  margin-top: 72px; 
-  margin-left: 93px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
   color: white;
   }
 
@@ -15,7 +16,9 @@
 
   .distribution_form {
    display: flex;
+   flex-direction: column;
    margin-top: 20px;
+   padding-bottom: 60px;
   }
 
 
@@ -23,7 +26,7 @@
 
 
   .distribution_input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     outline: none;
     padding-left: 16px;
@@ -46,9 +49,10 @@
     display: flex;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
-    padding-left: 29px;
+    margin-top: 30px;
+    margin-left: 125px;
     padding-top: 16px;
+    padding-left: 29px;
     color: #f5f4fa;
     background-color: vars.$brandcolor;
     border-radius:4px ;

@@ -688,7 +688,8 @@ template {
 /* Фон секции "наша команда" */
 .team {
   margin-top: 60px;
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
+  width: 100vw;
 }
 
 /* размер текста "наша команда" */
@@ -702,9 +703,9 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding: 0px;
+  padding-bottom: 60px;
   gap: 30px;
 }
 
@@ -761,21 +762,22 @@ template {
 }
 
 .clients_tittle {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .clients_list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0%;
   justify-content: space-around;
   gap: 10px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .clients_svg {
   height: 90px;
-  width: 170px;
+  width: 210px;
   fill: rgb(175, 177, 184);
   border: 20px 63px;
   border-style: solid;
@@ -795,20 +797,23 @@ template {
 
 .address {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .address_list {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
-  gap: 9px;
+  gap: 8px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .address_logo {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: #2196f3;
 }
 
@@ -817,6 +822,7 @@ template {
 }
 
 .address_direction {
+  margin-top: 22px;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -834,8 +840,9 @@ template {
 }
 
 .distribution {
-  margin-top: 72px;
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
 }
 
@@ -848,11 +855,13 @@ template {
 
 .distribution_form {
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
+  padding-bottom: 60px;
 }
 
 .distribution_input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   outline: none;
   padding-left: 16px;
@@ -872,9 +881,10 @@ template {
   display: flex;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
-  padding-left: 29px;
+  margin-top: 30px;
+  margin-left: 125px;
   padding-top: 16px;
+  padding-left: 29px;
   color: #f5f4fa;
   background-color: #2196f3;
   border-radius: 4px;
@@ -892,15 +902,11 @@ template {
   cursor: pointer;
 }
 
-.StudioContacts {
-  margin-left: 70px;
-  margin-top: 72px;
-}
-
 .StudioContacts_title {
   font-weight: 700;
   color: #f5f4fa;
   text-transform: uppercase;
+  text-align: center;
   padding-left: 10px;
   padding-bottom: 20px;
 }
@@ -954,27 +960,18 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: rgb(255, 255, 255);
   z-index: 3;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_close {
-  top: 8px;
-  left: 25px;
-  z-index: 4;
-  cursor: pointer;
-}
-
 .modal_svg {
   fill: #212121;
   position: absolute;
-  left: 490px;
+  left: 412px;
   top: 8px;
-  width: 11px;
-  height: 11px;
   padding-left: 10px;
   width: 30px;
   height: 30px;
@@ -999,9 +996,13 @@ template {
 .userdata_group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  margin-left: 40px;
   border: 0;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 0;
+  padding-inline: 0;
+  margin-bottom: 20px;
 }
 
 .userdata_title {
@@ -1009,13 +1010,8 @@ template {
   font-size: 20px;
   text-align: center;
   padding-top: 40px;
-}
-
-.userdata_label--first {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .userdata_label {
@@ -1026,7 +1022,6 @@ template {
   font-weight: 400;
   font-size: 12px;
   color: rgb(117, 117, 117);
-  padding-bottom: 4px;
 }
 .userdata_label:hover > .userdata_icon, .userdata_label:focus-within > .userdata_icon {
   fill: #2196f3;
@@ -1038,10 +1033,15 @@ template {
   border-color: #2196f3;
 }
 
+.userdata_label--first {
+  padding-top: 0px;
+}
+
 .userdata_input {
   font-size: 16px;
   height: 40px;
-  width: 448px;
+  width: 370px;
+  margin-top: 4px;
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -1060,11 +1060,15 @@ template {
 .userdata_icon {
   fill: #212121;
   position: absolute;
-  top: 35px;
+  top: 39px;
   left: 15px;
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.userdata_icon--first {
+  top: 30px;
 }
 
 /* Инпут комментарий */
@@ -1072,6 +1076,7 @@ template {
   height: 120px;
   resize: none;
   padding: 16px 12px;
+  margin-top: 4px;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1083,7 +1088,7 @@ template {
 
 .userdata_button {
   margin-top: 30px;
-  margin-left: 124px;
+  margin-left: 85px;
   width: 200px;
   height: 50px;
   border: 0;
@@ -1100,9 +1105,9 @@ template {
 .checkbox {
   margin-top: 20px;
   margin-left: 12px;
-  padding-left: 24.38px;
+  padding-left: 8px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   color: #757575;
 }
 
@@ -1132,7 +1137,8 @@ template {
 
 .checkbox_castom {
   position: absolute;
-  right: 455px;
+  bottom: 117px;
+  left: 40px;
   width: 15px;
   height: 15px;
   border: 2px solid #212121;
