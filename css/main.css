@@ -536,6 +536,9 @@ template {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)), url(../../images/img-background.jpg);
   background-color: #2f303a;
   background-size: cover;
@@ -588,16 +591,10 @@ template {
   font-weight: 700;
   color: white;
   cursor: pointer;
-  margin-left: 500px;
   margin-top: 30px;
   border: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .hero_button {
-    margin-left: 125px;
-  }
-}
 .advantage {
   margin-top: 30px;
 }
@@ -612,7 +609,11 @@ template {
 }
 
 .advantage_illustration {
-  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
   height: 120px;
   margin-top: 30px;
   background-color: rgb(245, 244, 250);
@@ -620,7 +621,6 @@ template {
 }
 
 .advantage_svg {
-  margin-left: 190px;
   margin-top: 25px;
   height: 70px;
   width: 70px;
@@ -714,8 +714,18 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 450px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.team_photo {
+  max-width: 450px;
+  max-height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team_name {
@@ -865,7 +875,10 @@ template {
   height: 50px;
   outline: none;
   padding-left: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 0px;
+  margin-bottom: 20px;
   background-color: #2f303a;
   color: #2196f3;
   border: 1px;
@@ -881,8 +894,7 @@ template {
   display: flex;
   width: 200px;
   height: 50px;
-  margin-top: 30px;
-  margin-left: 125px;
+  margin: 0 auto;
   padding-top: 16px;
   padding-left: 29px;
   color: #f5f4fa;
@@ -1298,7 +1310,7 @@ ol[class] {
 }
 
 .conteiner {
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1338,9 +1350,9 @@ a {
 }
 
 .burger {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 276px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   border: none;
