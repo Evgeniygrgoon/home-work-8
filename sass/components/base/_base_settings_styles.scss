@@ -6,6 +6,9 @@
 *::after {
   box-sizing: border-box;
 }
+* {
+  padding-inline-start: 0px;
+}
 
 a {
   color:vars.$brandblack;
@@ -56,6 +59,9 @@ ol[class] {
 .conteiner {
   max-width: 450px;
   margin: 0 auto;
+  padding-inline-start: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   overflow: hidden;
 }
 

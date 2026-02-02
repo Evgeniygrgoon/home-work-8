@@ -4,22 +4,30 @@
   margin-top: 60px;
   margin-bottom: 30px;
 }
+.clients_case {
+  max-width: 450px;
+  margin: 0 auto;
+}
 
 
 .clients_list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0%;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content:space-around;
+  gap: 30px;
   padding-bottom: 60px;
+}
+
+.clients_item {
+  max-width: 210px;
+  max-height: 90px;
 }
 
 
 
 .clients_svg {
-  height: 90px;
-  width: 210px;
+  height: 100%;
+  width: 100%;
   fill:rgba(175, 177, 184, 1);;
   border: 20px 63px ;
   border-style: solid;
