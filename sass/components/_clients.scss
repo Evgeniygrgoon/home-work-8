@@ -1,14 +1,38 @@
 @use './base/vars';
 
 .clients_tittle{
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
+
+@media screen and (min-width: 1200px)
+{
+  .clients_tittle {
+   padding-top: 94px;
+  padding-bottom: 50px;
+  }
+}
+
+
 .clients_case {
   max-width: 450px;
   margin: 0 auto;
 }
 
+
+@media screen and (min-width: 768px)
+{
+  .clients_case {
+   max-width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .clients_case {
+   max-width: 1170px;
+  }
+}
 
 .clients_list {
   display: flex;
@@ -18,9 +42,23 @@
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px)
+{
+  .clients_list {
+   flex-wrap: nowrap;
+  }
+}
+
 .clients_item {
   max-width: 210px;
   max-height: 90px;
+}
+
+@media screen and (min-width: 768px)
+{
+  .clients_item {
+   max-width: 226px;
+  }
 }
 
 

@@ -7,6 +7,7 @@
   width: 100vw;
 }
 
+
 /* размер текста "наша команда" */
 .team_tittle {
   font-size: 36px;
@@ -14,24 +15,49 @@
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px)
+{
+  .team_tittle {
+  padding-top: 94px;
+  }
+}
+
+
 .team_list {
   display: flex;
   flex-direction:column;
   align-items: center;
-    padding-bottom: 60px;
-    padding: 0px;
-     padding-bottom: 60px;
+  margin: 0px 15px;
+  padding-bottom: 60px;
   gap: 30px;
   
 }
+
+
+
+@media screen and (min-width: 768px)
+{
+  .team_list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .team_list {
+  margin: 0px 215px;
+  padding-bottom: 94px;
+  flex-wrap: nowrap;
+  }
+}
+
 
 .team_item {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 450px;
   border-radius: 4px;
   box-shadow:
@@ -39,6 +65,20 @@
    0px 1px 1px 0px rgb(0, 0, 0 , 0.14),
    0px 2px 1px 0px rgb(0, 0, 0 , 0.20);
 
+}
+
+@media screen and (min-width: 768px)
+{
+  .team_item {
+  max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .team_item {
+  max-width: 270px;
+  }
 }
 
 .team_photo {

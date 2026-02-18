@@ -2,11 +2,7 @@
 
 
 
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .address_list {
   display: flex;
@@ -17,6 +13,15 @@
   text-align: center;
 
 }
+
+@media screen and (min-width: 1200px)
+{
+  .address_list {
+   gap: 9px;
+   margin-left: 215px;
+  }
+}
+
 
 .address_logo {
   font-family: Raleway, Arial, Helvetica, sans-serif;

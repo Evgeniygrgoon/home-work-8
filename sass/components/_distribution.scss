@@ -8,6 +8,16 @@
   color: white;
   }
 
+     @media screen and (min-width: 1200px)
+{
+  .distribution {
+    width: 570px;
+    margin-left: 93px;
+    margin-top:  70px;
+    display: block;
+  }
+}
+
   .distribution_text {
     text-transform: uppercase;
     font-size: 14px;
@@ -15,12 +25,29 @@
     letter-spacing: 1.1px;
   }
 
+       @media screen and (min-width: 1200px)
+{
+  .distribution_text {
+    margin-left: 15px;
+  }
+}
+
+  
+
   .distribution_form {
    display: flex;
    flex-direction: column;
    margin-top: 20px;
    padding-bottom: 60px;
   }
+
+      @media screen and (min-width: 1200px)
+{
+  .distribution_form  {
+   display: flex;
+   flex-direction: row;
+  }
+}
 
 
 
@@ -48,6 +75,13 @@
   border-color: vars.$brandcolor;
   }
   }
+
+   @media screen and (min-width: 1200px)
+{
+  .distribution_input {
+    max-width: 354px;
+  }
+}
 
 
    .distribution_button {

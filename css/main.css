@@ -310,6 +310,7 @@ template {
 }
 
 .header {
+  position: relative;
   border-bottom-width: 1px;
   border-bottom-color: rgb(236, 236, 236);
   border-bottom-style: solid;
@@ -318,6 +319,7 @@ template {
 
 .heder_nav {
   display: flex;
+  height: 80px;
   font-size: 14px;
   font-weight: 500;
   color: #212121;
@@ -336,22 +338,43 @@ template {
   color: #2196f3;
 }
 
+@media screen and (min-width: 767px) {
+  .header_logo {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header_logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-left: 215px;
+    font-size: 26px;
+  }
+}
 /* Цвет "WEB" */
 .logo {
   color: #2196f3;
+  letter-spacing: 0.03em;
 }
 
 /* цвет "STUDIO" вверху */
 .header_span {
   color: #212121;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 .navigation {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  position: absolute;
+  top: 32px;
+  left: 30.85vw;
 }
 
+@media screen and (min-width: 1200px) {
+  .navigation {
+    left: 29.5vw;
+  }
+}
 @media screen and (max-width: 767px) {
   .navigation {
     display: none;
@@ -359,7 +382,6 @@ template {
 }
 .navigation_list {
   display: flex;
-  width: 294px;
   justify-content: space-between;
   padding: 0px;
   color: #212121;
@@ -370,10 +392,15 @@ template {
   position: relative;
   text-decoration: none;
   color: #212121;
+  margin-left: 50px;
 }
 .navigation_link:hover, .navigation_link:focus {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation_link--first {
+  margin-left: 0px;
 }
 
 .navigation_link--current {
@@ -384,20 +411,26 @@ template {
   content: "";
   display: block;
   left: 0%;
-  top: 45.5px;
+  top: 45px;
   width: 100%;
   height: 4px;
+  border-color: #2196f3;
   border-radius: 2px;
   background-color: #2196f3;
 }
 
 .contacts {
-  display: flex;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  margin-left: 305px;
+  position: absolute;
+  top: 21px;
+  right: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    top: 32px;
+    right: 215px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
@@ -405,9 +438,15 @@ template {
 }
 .contacts_list {
   display: flex;
+  flex-direction: column;
   padding: 0%;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts_list {
+    flex-direction: row;
+  }
+}
 .contacts_item {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -428,23 +467,32 @@ template {
 .contacts_item--left {
   display: flex;
   align-items: center;
-  padding: 10px 0px 10px 10px;
 }
 .contacts_item--left:hover, .contacts_item--left:focus {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts_item--left {
+    padding-right: 30px;
+  }
+}
 .contacts_item--right {
   display: flex;
   align-items: center;
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 0px 0px;
 }
 .contacts_item--right:hover, .contacts_item--right:focus {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts_item--right {
+    padding: 0;
+  }
+}
 .contacts_smatphone {
   fill: #757575;
   height: 16px;
@@ -456,7 +504,6 @@ template {
   fill: #757575;
   width: 16px;
   height: 12px;
-  margin-left: 30px;
   margin-right: 10px;
 }
 
@@ -545,13 +592,15 @@ template {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)), url(../../images/img-background.jpg);
   background-color: #2f303a;
   background-size: cover;
+  outline: 0;
+  border: 0;
   height: 600px;
   width: 100vw;
   margin: 0% auto;
   background-position: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)), url(../../images/img-background480.jpg);
     background-color: #2f303a;
@@ -565,10 +614,11 @@ template {
 /* Титульный текст */
 .hero_title {
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
+  padding-top: 118px;
   color: white;
 }
 
@@ -582,6 +632,13 @@ template {
     text-transform: uppercase;
     padding-top: 118px;
     color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    font-size: 44px;
+    line-height: 60px;
+    padding: 200px 26px 30px 26px;
   }
 }
 /*  стиль кнопки "заказать услугу" */
@@ -598,21 +655,48 @@ template {
   border: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero_button {
+    margin-top: 0px;
+  }
+}
 .advantage {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantage {
+    margin-top: 94px;
+  }
+}
 .advantage_list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 0%;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage_list {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage_list {
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 .advantage_illustration {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   max-width: 450px;
   width: 100%;
   height: 120px;
@@ -621,6 +705,26 @@ template {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage_illustration {
+    margin-top: 0%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage_illustration {
+    max-width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage_item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage_item {
+    max-width: 270px;
+  }
+}
 .advantage_svg {
   margin-top: 25px;
   height: 70px;
@@ -633,8 +737,14 @@ template {
   text-align: center;
   padding-bottom: 10px;
   font-weight: 700;
+  font-size: 14px;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantage_tittle {
+    text-align: left;
+  }
+}
 .advantage_text {
   font-size: 14px;
   font-weight: 400;
@@ -647,13 +757,18 @@ template {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .WhatWeDo {
+    display: block;
+  }
+}
 .WhatWeDo_tittle {
   margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .WhatWeDo_list {
   display: flex;
+  justify-content: center;
   gap: 30px;
   padding-top: 50px;
   padding-left: 15px;
@@ -700,28 +815,53 @@ template {
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team_tittle {
+    padding-top: 94px;
+  }
+}
 .team_list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 60px;
-  padding: 0px;
+  margin: 0px 15px;
   padding-bottom: 60px;
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .team_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team_list {
+    margin: 0px 215px;
+    padding-bottom: 94px;
+    flex-wrap: nowrap;
+  }
+}
 .team_item {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   max-width: 450px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 768px) {
+  .team_item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team_item {
+    max-width: 270px;
+  }
+}
 .team_photo {
   width: 100%;
   height: 100%;
@@ -773,15 +913,31 @@ template {
 }
 
 .clients_tittle {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients_tittle {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
 .clients_case {
   max-width: 450px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .clients_case {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients_case {
+    max-width: 1170px;
+  }
+}
 .clients_list {
   display: flex;
   flex-wrap: wrap;
@@ -790,11 +946,21 @@ template {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients_list {
+    flex-wrap: nowrap;
+  }
+}
 .clients_item {
   max-width: 210px;
   max-height: 90px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients_item {
+    max-width: 226px;
+  }
+}
 .clients_svg {
   height: 100%;
   width: 100%;
@@ -815,12 +981,35 @@ template {
   background-color: #2f303a;
 }
 
-.address {
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: nowrap;
+  }
+}
+.footer_block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 70px;
+  }
+}
 .address_list {
   display: flex;
   flex-direction: column;
@@ -830,6 +1019,12 @@ template {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .address_list {
+    gap: 9px;
+    margin-left: 215px;
+  }
+}
 .address_logo {
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -867,6 +1062,14 @@ template {
   color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  .distribution {
+    width: 570px;
+    margin-left: 93px;
+    margin-top: 70px;
+    display: block;
+  }
+}
 .distribution_text {
   text-transform: uppercase;
   font-size: 14px;
@@ -874,6 +1077,11 @@ template {
   letter-spacing: 1.1px;
 }
 
+@media screen and (min-width: 1200px) {
+  .distribution_text {
+    margin-left: 15px;
+  }
+}
 .distribution_form {
   display: flex;
   flex-direction: column;
@@ -881,6 +1089,12 @@ template {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .distribution_form {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .distribution_input {
   width: 85vw;
   max-width: 450px;
@@ -902,6 +1116,11 @@ template {
   border-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .distribution_input {
+    max-width: 354px;
+  }
+}
 .distribution_button {
   display: flex;
   width: 200px;
@@ -984,8 +1203,9 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-height: 609px;
   background-color: rgb(255, 255, 255);
   z-index: 3;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -994,7 +1214,7 @@ template {
 .modal_svg {
   fill: #212121;
   position: absolute;
-  left: 412px;
+  right: 8px;
   top: 8px;
   padding-left: 10px;
   width: 30px;
@@ -1013,16 +1233,17 @@ template {
 
 .userdata {
   display: flex;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .userdata_group {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 370px;
+  max-width: 370px;
   margin-left: 40px;
+  margin-right: 40px;
   border: 0;
   padding: 0;
   padding-inline: 0;
@@ -1064,7 +1285,7 @@ template {
 .userdata_input {
   font-size: 16px;
   height: 40px;
-  width: 370px;
+  max-width: 370px;
   margin-top: 4px;
   border-style: solid;
   border-width: 1px;
@@ -1172,16 +1393,17 @@ template {
 }
 
 .filter {
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  margin-left: 15px;
 }
 
 .filter_buttons {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 50px;
-  justify-content: center;
   gap: 8px;
-  padding-bottom: 50px;
 }
 
 .filter_button {
@@ -1192,7 +1414,6 @@ template {
   border-width: 0px;
   cursor: pointer;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  background-color: white;
   font-size: 16px;
   font-weight: 500;
 }
@@ -1205,7 +1426,9 @@ template {
 
 .project {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0px 15px;
   padding-left: 0%;
   gap: 30px;
 }
@@ -1223,8 +1446,8 @@ template {
 
 .project_img {
   display: block;
-  width: 370px;
-  height: 294px;
+  max-width: 370px;
+  max-height: 294px;
 }
 
 .project_overley {
@@ -1309,8 +1532,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -1320,18 +1543,14 @@ dd {
   margin: 0;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
 .conteiner {
-  max-width: 450px;
   margin: 0 auto;
   padding-inline-start: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden;
 }
 
 /* задаем шрифт , цвет и размер всему тексту */
@@ -1383,4 +1602,10 @@ a {
 }
 .burger:active, .burger:hover, .burger:focus {
   background-image: url(../../svg/menu_24px_active.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

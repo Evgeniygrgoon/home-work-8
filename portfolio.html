@@ -26,21 +26,23 @@
           <a class="header_logo" href="index.html">
             Web<span class="header_span header_span">Studio</span>
           </a>
+          <button class="burger js-open-menu" type="button"></button>
+    
           <div class="navigation">
             <ul class="navigation_list">
               <li>
-                <a class="navigation_link" href="index.html" rel="noopener noreferrer">
+                <a class="navigation_link navigation_link--first " href="index.html" rel="noopener noreferrer">
                   Студия
                 </a>
               </li>
-              <li >
+              <li>
                 <a class="navigation_link" href="/" rel="noopener noreferrer">
                   Контакты
                 </a>
               </li>
               <li>
-                <a class="navigation_link navigation_link--current" href="portfolio.html" rel="noopener noreferrer"> 
-                  Портфолио 
+                <a class="navigation_link navigation_link--current" href="portfolio.html" rel="noopener noreferrer">
+                  Портфолио
                 </a>
               </li>
             </ul>
@@ -65,13 +67,43 @@
               </li>
             </ul>
           </div>
-        </div>
       </nav>
+      <div class="mbmenu js-menu-container ">
+        <button class="button mbmenu_button js-close-menu"></button>
+        <ul class="mbmenu_navigation">
+          <li class="mbmenu_item">
+            <a href="index.html" rel="noopener noreferrer">
+              Студия
+            </a>
+          </li>
+          <li class="mbmenu_item">
+            <a href="portfolio.html" rel="noopener noreferrer">
+              Портфолио
+            </a>
+          </li>
+          <li class="mbmenu_item"><a href="portfolio.html" rel="noopener noreferrer">
+              Контакты
+            </a></li>
+        </ul>
+        <ul class="mbmenu_contacts">
+          <li class="mbmenu_item mbmenu_item--number">
+            <a class="mbmenu_item--number" href="tel:+3809611111111"> +38 096 111 11 11</a></li>
+          <li class="mbmenu_item mbmenu_item--mail">
+            <a class="mbmenu_item--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mbmenu_links">
+          <li><a class="mbmenu_link mbmenu_link--first" href="//www.instagram.com/">Instagram</a></li>
+          <li><a class="mbmenu_link" href="https://x.com/">Twitter</a></li>
+          <li><a class="mbmenu_link" href="https://www.facebook.com/">Facebook</a></li>
+          <li><a class="mbmenu_link" href="//ru.linkedin.com/">linkedIn</a></li>
+        </ul>
+      </div>
     </section>
   </header>
   <main>
-    <section class="filter">
-      <div class="conteiner">
+    <div class="conteiner">
+      <section class="filter">
+    
         <ul class="filter_buttons">
           <li><button class="filter_button" type="button">Все</button></li>
           <li><button class="filter_button" type="button">Веб сайты</button></li>
@@ -79,6 +111,7 @@
           <li><button class="filter_button" type="button">Дизайн</button></li>
           <li><button class="filter_button" type="button">Маркетинг</button></li>
         </ul>
+      </section>
         <ul class="project">
           <li class="project_card">
             <div class="project_item">
@@ -94,8 +127,7 @@
 
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/poster.jpg" alt="два баскетболиста" width="370"
-              height="294" />
+            <img class="project_img" src="./images/portfolio/poster.jpg" alt="laptop" />
                <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -106,8 +138,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/seafood.jpg" alt="рыба в тексте" width="370"
-              height="294" />
+            <img class="project_img" src="./images/portfolio/seafood.jpg" alt="рыба в тексте" />
                <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -118,7 +149,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/prime.jpg" alt="наушники" width="370" height="294" />
+            <img class="project_img" src="./images/portfolio/prime.jpg" alt="наушники"  />
              <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -130,7 +161,7 @@
 
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/boxes.jpg" alt="коробки" width="370" height="294" />
+            <img class="project_img" src="./images/portfolio/boxes.jpg" alt="коробки"  />
              <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -141,7 +172,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/no-borders.jpg" alt="монитор" width="370" height="294" />
+            <img class="project_img" src="./images/portfolio/no-borders.jpg" alt="монитор"  />
              <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -152,8 +183,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/limited-edition.jpg" alt="журнал" width="370"
-              height="294" />
+            <img class="project_img" src="./images/portfolio/limited-edition.jpg" alt="журнал"  />
                <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -164,7 +194,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/tag.jpg" alt="бирка" width="370" height="294" />
+            <img class="project_img" src="./images/portfolio/tag.jpg" alt="бирка"  />
              <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -175,8 +205,7 @@
           </li>
           <li class="project_card">
             <div class="project_item">
-            <img class="project_img" src="./images/portfolio/growning-business.jpg" alt="ноутбук с человеком"
-              width="370" height="294" />
+            <img class="project_img" src="./images/portfolio/growning-business.jpg" alt="ноутбук с человеком"/>
                <p class="project_overley">Технокряк это современная площадка распространения коронавируса. Компании
                 используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>

@@ -1,12 +1,18 @@
 @use './base/vars';
 
 .contacts {
-  display:flex;
-   margin-top: 22px;
-  margin-bottom: 22px;
-  margin-left: 305px;
+  position: absolute;
+  top: 21px;
+  right: 15px;
 
  
+}
+
+@media screen and (min-width: 1200px){
+  .contacts {
+    top: 32px;
+  right: 215px;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -20,8 +26,15 @@
 
 .contacts_list {
   display: flex;
+  flex-direction: column;
   padding: 0%;
  
+}
+
+@media screen and (min-width: 1200px){
+  .contacts_list {
+  flex-direction: row;
+  }
 }
 
 
@@ -57,7 +70,6 @@
 .contacts_item--left {
   display:flex;
   align-items: center;
-  padding: 10px 0px 10px 10px;
 
   &:hover ,
   &:focus 
@@ -67,16 +79,28 @@
   }
 }
 
+@media screen and (min-width: 1200px){
+  .contacts_item--left {
+  padding-right: 30px;
+  }
+}
+
 .contacts_item--right {
   display: flex;
   align-items: center;
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 0px 0px;
 
   &:hover ,
   &:focus 
   {
   color: vars.$brandcolor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .contacts_item--right {
+  padding: 0;
   }
 }
 
@@ -94,7 +118,6 @@
  fill: vars.$brandgrey;
  width: 16px;
  height: 12px;
- margin-left: 30px;
  margin-right: 10px;
  }
 

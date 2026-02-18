@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-<body class="body">
+ <body class="body">
   <header class="header">
     <section class="conteiner">
       <nav>
@@ -31,7 +31,7 @@
           <div class="navigation">
             <ul class="navigation_list">
               <li>
-                <a class="navigation_link navigation_link--current" href="index.html" rel="noopener noreferrer">
+                <a class="navigation_link navigation_link--first navigation_link--current " href="index.html" rel="noopener noreferrer">
                   Студия
                 </a>
               </li>
@@ -127,25 +127,15 @@
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="advantage_item">
-             <div class="advantage_illustration">
-            <svg class="advantage_svg">
-              <use  href="./images/sprite.svg#icon-astronaut" width="70" hight="70"></use>
-            </svg>
-            </div>
-            <h3 class="advantage_tittle">пунктуальность</h3>
-            <p class="advantage_text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
+           <li class="advantage_item">
           <div class="advantage_illustration">
             <svg class="advantage_svg">
               <use  href="./images/sprite.svg#icon-clock" width="70" hight="70"></use>
             </svg>
             </div>
-            <h3 class="advantage_tittle">планирование</h3>
+            <h3 class="advantage_tittle">пунктуальность</h3>
             <p class="advantage_text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li class="advantage_item">
@@ -154,11 +144,24 @@
               <use  href="./images/sprite.svg#icon-diagram" width="70" hight="70"></use>
             </svg>
             </div>
-            <h3 class="advantage_tittle">современные Технологии</h3>
+            <h3 class="advantage_tittle">планирование</h3>
+            <p class="advantage_text">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
+          </li>
+          <li class="advantage_item">
+             <div class="advantage_illustration">
+            <svg class="advantage_svg">
+              <use  href="./images/sprite.svg#icon-astronaut" width="70" hight="70"></use>
+            </svg>
+            </div>
+            <h3 class="advantage_tittle">современные технологии</h3>
             <p class="advantage_text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
+         
+          
         </ul>
       </div>
     </section>
@@ -400,78 +403,82 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <section>
-      <div class="conteiner">
-        <div class="address">
-          <div class="address_list">
-            <a class="address_logo" href="index.html">
-              Web<span class="address_span">Studio</span>
-            </a>
-            <address class="address_direction">
-              г. Киев, пр-т Леси Украинки, д. 26
-            </address>
-            <a class="address_contacts" href="mailto:info@example.com">
-              info@example.com
-            </a>
-            <a class="address_contacts" href="tel:+380991111111">
-              +38-099 111-11-11
-            </a>
-          </div>
-          <div class="StudioContacts">
-            <h3 class="StudioContacts_title">Присоединяйтесь</h3>
-            <ul class="StudioContacts_list">
-              <li>
-                <a class="StudioContacts_link " href="https://www.instagram.com/">
-                  <svg class="StudioContacts_svg">
-                    <use href="./images/sprite.svg#icon-inst">
-                    </use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="StudioContacts_link " href="https://x.com/">
-                  <svg class="StudioContacts_svg">
-                    <use href="./images/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="StudioContacts_link " href="https://www.facebook.com/">
-                  <svg class="StudioContacts_svg">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="StudioContacts_link" href="https://ru.linkedin.com/">
-                  <svg class="StudioContacts_svg">
-                    <use href="./images/sprite.svg#icon-in"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="distribution">
-            <p class="distribution_text">подпишитесь на рассылку</p>
-            <form class="distribution_form" >
-             <label>
-               <input name="E-mail-subscribe" class="distribution_input" type="text" placeholder="E-mail">
-             </label>
-              <button class="button distribution_button" type="submit">
-                Подписаться
-                <svg class="button_svg">
+
+        <div class="conteiner">
+          <footer class="footer">
+            <section class="footer_block">
+              <div class="address">
+                <div class="address_list">
+                  <a class="address_logo" href="index.html">
+                    Web<span class="address_span">Studio</span>
+                  </a>
+                  <address class="address_direction">
+                    г. Киев, пр-т Леси Украинки, д. 26
+                  </address>
+                  <a class="address_contacts" href="mailto:info@example.com">
+                    info@example.com
+                  </a>
+                  <a class="address_contacts" href="tel:+380991111111">
+                    +38-099 111-11-11
+                  </a>
+                </div>
+              </div>
+              <div class="StudioContacts">
+                <h3 class="StudioContacts_title">Присоединяйтесь</h3>
+                <ul class="StudioContacts_list">
+                  <li>
+                    <a class="StudioContacts_link " href="https://www.instagram.com/">
+                      <svg class="StudioContacts_svg">
+                        <use href="./images/sprite.svg#icon-inst">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="StudioContacts_link " href="https://x.com/">
+                      <svg class="StudioContacts_svg">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="StudioContacts_link " href="https://www.facebook.com/">
+                      <svg class="StudioContacts_svg">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="StudioContacts_link" href="https://ru.linkedin.com/">
+                      <svg class="StudioContacts_svg">
+                        <use href="./images/sprite.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        
+            </section>
+        
+            <div class="distribution">
+              <p class="distribution_text">подпишитесь на рассылку</p>
+              <form class="distribution_form">
+                <label>
+                  <input name="E-mail-subscribe" class="distribution_input" type="text" placeholder="E-mail">
+                </label>
+                <button class="button distribution_button" type="submit">
+                  Подписаться
+                  <svg class="button_svg">
                     <use href="./images/sprite.svg#icon-send"></use>
                   </svg>
-              </button>
-            </form>
-
-          </div>
+                </button>
+              </form>
+        
+            </div>
         </div>
-      </div>
-    </section>
-  </footer>
+        </footer>
+        </div>
+  
 
 
   <div class="modal is-hidden" data-modal>
@@ -531,4 +538,4 @@
   <script src="./js/mobile-menu.js"></script>
   </body>
 
-</html>
+</html>   

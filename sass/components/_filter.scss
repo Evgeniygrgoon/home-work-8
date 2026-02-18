@@ -1,17 +1,18 @@
 @use './base/vars';
 
 .filter {
-  margin-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  margin-left: 15px;
 }
 
 .filter_buttons {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 50px;
-  justify-content: center;
   gap: 8px;
-  padding-bottom: 50px;
-}
+  }
 
 
 
@@ -19,12 +20,11 @@
 .filter_button {
   padding: 6px 22px 6px 22px;
   color:vars.$brandblack;
-  background-color: rgba(245, 244, 250, 1);
+  background-color:rgba(245, 244, 250, 1);
   border-radius: 4px;
   border-width: 0px;
   cursor: pointer;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  background-color: white;
   font-size: 16px;
   font-weight: 500;
 

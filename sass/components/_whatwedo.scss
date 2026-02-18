@@ -4,13 +4,20 @@
   display: none;
 }
 
+@media screen and (min-width: 1200px)
+{
+  .WhatWeDo {
+   display: block;
+  }
+}
+
 .WhatWeDo_tittle {
 margin-top: 94px;
-margin-bottom: 94px;
 }
 
 .WhatWeDo_list {
   display: flex;
+  justify-content: center;
   gap: 30px;
   padding-top: 50px;
   padding-left: 15px;
