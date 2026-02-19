@@ -3,7 +3,7 @@
 .userdata {
   display: flex;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 609px;
   }
 
 
@@ -11,14 +11,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 77.083vw;
   max-width: 370px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 auto;
   border: 0;
   padding: 0;
   padding-inline:0 ;
-  margin-bottom: 20px;
   }
+
+  @media screen and (min-width: 1200px) {
+  .userdata_group {
+    max-width: 448px;
+}
+}
 
 
 
@@ -38,7 +43,7 @@ letter-spacing: 0.03em;
    position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  margin-top: 12px;
   font-weight: 400;
   font-size: 12px;
   color:rgba(117, 117, 117, 1) ;
@@ -74,7 +79,7 @@ letter-spacing: 0.03em;
 .userdata_input {
   font-size: 16px;
   height: 40px;
-  max-width: 370px;
+  max-width: 77.083vw;
   margin-top: 4px;
   border-style: solid;
   border-width: 1px;
@@ -97,7 +102,7 @@ letter-spacing: 0.03em;
 .userdata_icon {
   fill:vars.$brandblack;
   position: absolute;
-  top: 39px;
+  top: 30px;
   left: 15px;                                   
   width: 18px;
   height: 18px;
@@ -114,6 +119,7 @@ letter-spacing: 0.03em;
 
   .userdata_textarea {
     height: 120px;
+    max-width: 77.083vw;
     resize: none;
     padding: 16px 12px;
     margin-top: 4px;
@@ -126,11 +132,14 @@ letter-spacing: 0.03em;
               outline: none;
               }
     
-  }
+  }  
 
 .userdata_button {
- margin-top: 30px;
- margin-left:85px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ bottom: 40px;
+ left: 50%;
  width: 200px;
  height: 50px;
  border: 0;

@@ -9,6 +9,12 @@
   color: vars.$brandgrey;
 }
 
+  @media screen and (min-width: 1200px) {
+  .checkbox {
+    padding-left: 24.38px;
+}
+}
+
 
 
 
@@ -20,6 +26,8 @@
   text-decoration: underline vars.$brandcolor ;
 
 }
+
+
 
 .checkbox_input{
   position: absolute;
@@ -46,8 +54,8 @@
 
 .checkbox_castom {
   position: absolute;
-  bottom: 117px;
-  left: 40px ;
+  bottom: 110px;
+  left: 8.8888% ;
   width: 15px;
   height: 15px;
   border: 2px solid vars.$brandblack;
@@ -56,5 +64,10 @@
  outline: none;
 }
 
+  @media screen and (min-width: 1200px) {
+  .checkbox_castom {
+    left: 9.84% ;
+}
+}
 
   
