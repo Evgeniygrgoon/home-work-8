@@ -678,7 +678,6 @@ template {
 .advantage_list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 0%;
 }
 
